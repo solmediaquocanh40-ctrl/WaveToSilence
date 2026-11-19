@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>WaveToSilence</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>CHUNG</string>
+			<key>footerText</key>
+			<string>Có cuộc gọi đến (Phone, Messenger, Zalo... — mọi app gọi qua CallKit) thì chỉ cần vẫy tay ngang qua cảm biến tiệm cận ở cạnh loa thoại là chuông im. Cuộc gọi vẫn đổ tiếp trên màn hình, KHÔNG cúp máy. Hết cuộc gọi, âm lượng chuông tự trả lại như cũ.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.vn.wavetosilence</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Bật WaveToSilence</string>
+			<key>PostNotification</key>
+			<string>com.vn.wavetosilence/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>VẪY TAY</string>
+			<key>footerText</key>
+			<string>Mặc định vẫy 1 lần là tắt chuông. Nếu hay bị tắt nhầm, bật vẫy 2 lần: phải vẫy hai lần trong vòng 1,5 giây mới tắt. Lưu ý: máy đang trong túi hoặc úp mặt (cảm biến bị che sẵn từ trước khi có cuộc gọi) thì vẫy không có tác dụng — đó là cố ý, để tránh vừa có cuộc gọi đã im chuông oan.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.vn.wavetosilence</string>
+			<key>key</key>
+			<string>doubleWave</string>
+			<key>label</key>
+			<string>Vẫy 2 lần mới tắt (chống tắt nhầm)</string>
+			<key>PostNotification</key>
+			<string>com.vn.wavetosilence/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>KHÁC</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.vn.wavetosilence</string>
+			<key>key</key>
+			<string>debug</string>
+			<key>label</key>
+			<string>Ghi log gỡ lỗi (Documents/WaveToSilence.log)</string>
+			<key>PostNotification</key>
+			<string>com.vn.wavetosilence/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>WaveToSilence 1.0.0 — made by Quoc. Phạm vi bản này: chỉ tắt TIẾNG chuông, không tắt rung; chỉ áp dụng cuộc gọi qua CallKit (Phone, Messenger, Zalo, WhatsApp...).</string>
+		</dict>
+	</array>
+</dict>
+</plist>

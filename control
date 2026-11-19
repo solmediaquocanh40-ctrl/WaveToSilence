@@ -1,0 +1,9 @@
+Package: com.vn.wavetosilence
+Name: WaveToSilence
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Có cuộc gọi đến (Phone, Messenger, Zalo... qua CallKit) thì vẫy tay ngang qua cảm biến tiệm cận là chuông im — cuộc gọi vẫn đổ tiếp, không cúp máy; hết cuộc gọi âm lượng chuông tự trả lại. Wave your hand over the proximity sensor to silence an incoming call (Phone and CallKit apps like Messenger/Zalo) without rejecting it.
+Maintainer: Quoc
+Author: Quoc
+Section: Tweaks
+Depends: mobilesubstrate
