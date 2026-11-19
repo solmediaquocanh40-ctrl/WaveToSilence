@@ -15,7 +15,7 @@
 //     (đường chính); dự phòng dò các selector tắt chuông trên TUCall.
 //     Cuộc gọi kết thúc/được nghe máy thì trả lại âm lượng chuông cũ.
 #import <UIKit/UIKit.h>
-#import <CallKit/CXCallObserver.h>
+#import <CallKit/CallKit.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
 
